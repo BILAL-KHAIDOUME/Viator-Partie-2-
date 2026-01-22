@@ -127,11 +127,13 @@ h1 {
 
 /* ===== FOOTER ===== */
 .site-footer {
-  background: #000;
+  background: #151515;
   color: #fff;
   padding: 40px 20px;
   margin-top: 60px;
   text-align: center;
+  text-decoration: none;
+
 }
 
 /* Social icons */
@@ -180,7 +182,7 @@ h1 {
 }
 
 .footer-rating .trustpilot {
-  color: #1dd1a1;
+  color: #f1f7f5;
 }
 
 /* Links grid */
@@ -193,6 +195,7 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   padding: 0 20px;
+  
 }
 
 .footer-column {
