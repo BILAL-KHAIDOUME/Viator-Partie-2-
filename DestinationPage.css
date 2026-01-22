@@ -156,3 +156,16 @@ h6 {
     display: flex;
     font-size: 20px;
 }
+.partie3{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    background-color: #dff9f4;
+    height: 90px;
+    padding-top: 20px;
+}
+.icons{
+    width: 30px;
+    height:30px;
+  
+}
