@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display:flex;
+    justify-content :space-between ;
+    align-items: center;
+}
+
+
+.nav{
+    display:flex;
+    justify-content :space-between ;
+}
+.logo{
+    display:flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+.logo img{
+    width: 160px;
+}
+.logo p{
+    width: 150px;
+    margin-top: 5px;
+}
+select{
+    margin-left: 20px;
+}
+
+.Ndiv i{
+    margin-right: 4px;
+}
