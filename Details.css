@@ -1,36 +1,109 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-header{
-    display:flex;
-    justify-content :space-between ;
+header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 
-.nav{
-    display:flex;
-    justify-content :space-between ;
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
-.logo{
-    display:flex;
+
+.logo {
+    display: flex;
     align-items: center;
     margin-left: 10px;
 
 }
-.logo img{
+
+.logo img {
     width: 160px;
 }
-.logo p{
+
+.logo p {
     width: 150px;
     margin-top: 5px;
 }
-select{
+
+select {
     margin-left: 20px;
 }
 
-.Ndiv i{
+.Ndiv i {
     margin-right: 4px;
 }
+
+.sec1 {
+    display: grid;
+    grid-template-columns: 0.5fr 2.5fr 1.5fr;
+    
+    margin-top: 10px;
+}
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.img1 {
+    margin: 5px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height:100px;
+    background-image: url("/imgs/IMG1.jpg");
+}
+.img2 {
+    margin: 5px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px;
+    background-image: url("/imgs/IMG2.jpg");
+}
+.img3 {
+    margin: 5px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px;
+    background-image: url("/imgs/IMG3.jpg");
+}
+.img4 {
+    margin: 5px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 100px;
+    background-image: url("/imgs/IMG4.jpg");
+}
+.img5{
+     margin: 5px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-image: url("/imgs/IMG4.jpg");
+}
+
