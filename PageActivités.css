@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo img {
+    width: 130px;
+}
+.logo {
+    display: flex;
+    gap: 10px;
+}
+.logo h6 {
+    margin-left: 10px;
+}
+nav {
+    display: flex;
+    gap: 250px;
+   
+}
+nav input{
+    /* padding-left: 50px; */
+    padding-right: 140px;
+    padding-left: 10px;
+    border: none;
+    
+}
+.searchbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    /* border-color: gray; */
+    border-radius: 50px;
+}
