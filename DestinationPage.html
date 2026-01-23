@@ -9,7 +9,7 @@
 </head>
 
 <body>
-     <header>
+    <header>
         <nav>
             <div class="div1">
                 <div class="navb">
@@ -18,7 +18,8 @@
 
                 </div>
                 <div>
-                    <select>
+                    <label for="discover" class="sr-only">Discover menu</label>
+                    <select id="discover">
                         <div class="select">
                             <option>Discover</option>
                         </div>
@@ -34,14 +35,15 @@
             </div>
         </nav>
     </header>
-    <section>
+    <main>
+        <section>
             <div class="titr">
                 <h1 class="titre">Explorez le Monde</h1>
                 <h2>Des destinations uniques pour des expériences inoubliables</h2>
                 <div class="box">
                     <input type="text" placeholder="entrez la destinations que vous...">
                     <div>
-                        <button class="search">
+                        <button class="search" aria-label="Rechercher une destination">
                             <img src="search.svg" alt="search">
                         </button>
                     </div>
@@ -180,11 +182,12 @@
         </section>
         <section>
             <div class="pagination">
-                <span class="active">< </span>
-                <span>2</span>
-                <span>3</span>
-                <span>.....</span>
-                <span class="active1">></span>
+                <span class="active">
+                    < </span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>.....</span>
+                        <span class="active1">></span>
             </div>
 
         </section>
