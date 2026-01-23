@@ -168,3 +168,32 @@ h6 {
     width: 30px;
     height:30px;
 }
+.imagg{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.quest{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid black;
+
+}
+
+.sn{
+    border-top:1px solid black;
+}
+
+.re{
+    border: none;
+}
+
+.list{
+    padding: 0 20px;
+    margin: 40px 0;
+
+}
