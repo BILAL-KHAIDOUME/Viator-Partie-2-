@@ -42,70 +42,48 @@ select {
 
 .sec1 {
     display: grid;
-    grid-template-columns: 0.5fr 2.5fr 1.5fr;
-    
-    margin-top: 10px;
+    grid-template-columns: 0.3fr 1fr 0.8fr; 
+    gap: 20px;
+    align-items: start;
 }
 
 .div1 {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 100%; 
+    height: 100px;
     border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.img1{
+    background-image: url(/imgs/IMG1.jpg);
+}
+.img2{
+    background-image: url(/imgs/IMG2.jpg);
+}
+.img3{
+    background-image: url(/imgs/IMG3.jpg);
+}
+.img4{
+    background-image: url(/imgs/IMG4.jpg);
+}
+
+.img5 {
     width: 100%;
-    height: 100%;
-    text-align: center;
+    height: 430px; 
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+     background-image: url(/imgs/IMG1.jpg);
+}
 
-}
-
-.img1 {
-    margin: 5px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height:100px;
-    background-image: url("/imgs/IMG1.jpg");
-}
-.img2 {
-    margin: 5px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 100px;
-    background-image: url("/imgs/IMG2.jpg");
-}
-.img3 {
-    margin: 5px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 100px;
-    background-image: url("/imgs/IMG3.jpg");
-}
-.img4 {
-    margin: 5px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 150px;
-    height: 100px;
-    background-image: url("/imgs/IMG4.jpg");
-}
-.img5{
-     margin: 5px;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    background-image: url("/imgs/IMG4.jpg");
-}
 
 
 .prix {
@@ -116,19 +94,19 @@ select {
     display: flex;
     flex-direction: column;
     gap: 14px;
+
     position: sticky;
-    top: 20px;
-
-
+    top: 80px; 
 }
 
-/* Price text */
+
+
 .prix p:first-child {
     font-size: 18px;
     font-weight: bold;
 }
 
-/* Form */
+
 .prix form {
     display: flex;
     flex-direction: column;
@@ -146,7 +124,7 @@ select {
     border: 1px solid #ccc;
 }
 
-/* Button */
+
 .prix button {
     background-color: #1a8f5c;
     color: white;
@@ -162,9 +140,74 @@ select {
     background-color: #15734a;
 }
 
-/* Info text */
 .prix div p {
     font-size: 6px;
     color: #555;
 }
+.icons {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+}
 
+.icons div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icons i {
+    color: #1a8f5c;
+    font-size: 16px;
+}
+
+
+.accordion {
+    
+    margin-top: 30px;
+}
+
+
+.item input {
+    display: none;
+}
+
+.item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item-header i {
+    transition: transform 0.3s;
+}
+
+
+.item-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-size: 15px;
+    color: #555;
+    margin-top: 10px;
+}
+
+
+.item input:checked ~ .item-content {
+    max-height: 300px;
+}
+
+.item input:checked + .item-header i {
+    transform: rotate(180deg);
+}
