@@ -43,12 +43,12 @@ h6 {
 }
 
 .titr {
-    font-size: 20px;
-    text-align: center;
     background-image: url(background.jpg);
     background-size: cover;
     background-position: center;
     height: 80vh;
+    display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -57,30 +57,31 @@ h6 {
 }
 
 .titre {
-    text-align: center;
+    
     font-size: 50px;
     padding-top: 40px;
 }
-.titre h2{
+
+h2 {
     margin: 10px 0 30px;
     font-size: 22px;
 }
 .box {
-    border: 100px;
+
     border-radius: 50px;
     padding: 10px 15px;
     width: 450px;
     background-color: white;
     display: flex;
     align-items: center;
-    flex: 1;
+    gap: 10px;
 }
 
 .box input {
     border: none;
     outline: none;
     font-size: 16px;
-    width: 100%;
+    flex: 1;
 }
 
 .search {
