@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> Activity Details | Viator</title>
+
     <link rel="stylesheet" href="Details.css">
-    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-</head>
 </head>
 
 <body>
@@ -16,104 +17,100 @@
         <nav class="nav">
             <div class="logo">
                 <div>
-                    <img src="/imgs/Viator_logo.png" alt="Viator logo">
+
+                    <img src="/imgs/Viator_logo.png" alt="Viator official logo">
                     <p class="tagline">a Tripadvisor company</p>
                 </div>
 
                 <div class="disc">
+                    <label for="discover" class="sr-only">Discover menu</label>
                     <select name="discover" id="discover">
                         <option>Discover</option>
                     </select>
                 </div>
             </div>
         </nav>
+
         <div class="Ndiv">
-            <i class="fa-solid fa-magnifying-glass" aria-label="Search"></i>
-            <i class="fa-solid fa-gift" aria-label="Rewards"></i>
-            <i class="fa-solid fa-user" aria-label="User account"></i>
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <i class="fa-solid fa-gift" aria-hidden="true"></i>
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
         </div>
     </header>
+
     <main>
         <h1>Tuscany Day Trip from Florence: Siena, San Gimignano, Pisa and Lunch at a Winery</h1>
+
         <section class="sec1">
             <div class="div1">
-                <div class="img1"></div>
-                <div class="img2"></div>
-                <div class="img3"></div>
-                <div class="img4"></div>
+                <div class="img1" role="img" aria-label="Tuscany village view"></div>
+                <div class="img2" role="img" aria-label="San Gimignano towers"></div>
+                <div class="img3" role="img" aria-label="Pisa tower"></div>
+                <div class="img4" role="img" aria-label="Winery landscape"></div>
             </div>
-            <div class="img5"></div>
+            <div class="img5" role="img" aria-label="Panoramic Tuscany tour image"></div>
 
             <div class="prix">
                 <p>From $69.90 per person</p>
-                <form action="">
-                    <label for="d">Date</label>
-                    <input type="date">
-                    <label for="">Traveles</label>
-                    <input type="number">
+
+                <form>
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+
+                    <label for="travellers">Travellers</label>
+                    <input type="number" id="travellers">
                 </form>
-                <button>Check Availability </button>
+
+                <button>Check Availability</button>
+
                 <div>
-                    <p>Free cancellationup to 24 hours before the experience starts (local time)
-                        Reserve Now and Pay Later-Secure your spot while staying flexible</p>
+                    <p>
+                        Free cancellation up to 24 hours before the experience starts (local time).
+                        Reserve now and pay later.
+                    </p>
                 </div>
-
             </div>
-
         </section>
+
         <div class="icons">
             <div>
-                <i class="fa-regular fa-clock"></i>
+                <i class="fa-regular fa-clock" aria-hidden="true"></i>
                 <p>12 hours 30 minutes (approx.)</p>
             </div>
             <div>
-                <i class="fa-solid fa-mobile-screen"></i>
+                <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
                 <p>Mobile ticket</p>
             </div>
             <div>
-                <i class="fa-solid fa-message"></i>
+                <i class="fa-solid fa-message" aria-hidden="true" ></i>
                 <p>Offered in: English and 3 more</p>
             </div>
-
         </div>
 
-
         <section class="sec2">
-
             <div class="accordion">
 
                 <div class="item">
                     <input type="checkbox" id="acc1">
                     <label for="acc1" class="item-header">
                         <span>Overview</span>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                     </label>
-                    <div class="item-content">
+                    <div class="item-content" id="content1">
                         <p>
-                            Explore the Italian Riviera without having to rent a car on this day trip to the Cinque
-                            Terre from Florence
-                            . After arriving at La Spezia, follow your guide to each fishing village, from the beaches
-                            of Monterosso to
-                            the charming streets of Riomaggiore. Swim in turquoise waters and soak up all the character
-                            of this
-                            UNESCO-listed region before heading back to Florence.
-                            Full-day tour of the Cinque Terre from Florence
-                            Discover the UNESCO-listed Cinque Terre with your tour leader
-                            Travel between villages by coach, train, and boat if option selected
-                            Enjoy a street food light lunch in quaint Monterosso, if option selected
-
-                            Read more about - Scent of the Sea: Cinque Terre Park Full Day Trip from Florence
+                            Explore the Italian Riviera without having to rent a car on this day trip
+                            to the Cinque Terre from Florence...
                         </p>
                     </div>
                 </div>
 
                 <div class="item">
-                    <input type="checkbox" id="acc2">
+                    <input type="checkbox" id="acc2" >
                     <label for="acc2" class="item-header">
                         <span>What's included</span>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                     </label>
-                    <div class="item-content">
+                    <div class="item-content" id="content2">
                         <ul>
                             <li>Transport by coach</li>
                             <li>Professional guide</li>
@@ -124,22 +121,18 @@
 
                 <div class="item">
                     <input type="checkbox" id="acc3">
-                    <label for="acc3" class="item-header">
+                    <label for="acc3" class="item-header" >
                         <span>Meeting point</span>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
                     </label>
-                    <div class="item-content">
+                    <div class="item-content" id="content3">
                         <p>Florence city center details sent after booking.</p>
                     </div>
                 </div>
 
             </div>
-
         </section>
-
-
     </main>
-
 </body>
 
 </html>
