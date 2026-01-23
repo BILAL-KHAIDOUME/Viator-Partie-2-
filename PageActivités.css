@@ -1,9 +1,11 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 .logo img {
     width: 130px;
+    max-width: 100%;
 }
 .logo {
     display: flex;
@@ -14,16 +16,32 @@
 }
 nav {
     display: flex;
-    gap: 250px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    flex-wrap: wrap;
    
 }
 nav input{
-    /* padding-left: 50px; */
-    padding-right: 140px;
-    padding-left: 10px;
-    border: none;
+   width: 100%;
+   max-width: 200px;
+   padding: 8px 12px;
+   border: none;
     
 }
+.discover{
+border: none;
+border-radius:20px ;
+margin-left: 20px;
+}
+.discover:hover{
+   background-color: rgb(233, 233, 233);
+   border-radius: 30px;
+   cursor: pointer;
+   
+}
+
 .searchbox{
     display: flex;
     justify-content: center;
@@ -31,4 +49,43 @@ nav input{
     border: 1px solid black;
     /* border-color: gray; */
     border-radius: 50px;
+}
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)),url("backgroung.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: aqua;
+    padding-top: 50px;
+    padding-bottom: 50px; 
+    gap: 40px;
+    margin-top: 5px;
+}
+.text{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    
+}
+main button{
+    background-color: green;
+    border: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+main h2{
+    font-size: clamp(28px, 5vw, 50px);
+    text-align: center;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .searchbox{
+        display: none;
+    }
+    
 }
