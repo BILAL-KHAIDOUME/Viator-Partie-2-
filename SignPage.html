@@ -1,47 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Log in — Viator style</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="LoginPageAndSignPage.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="Viator_logo.png" alt="Viator logo ">
-        </div>
-    </header>
-    <section>
-        <div>
-             <svg width="72" height="72" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+ <header class="site-header">
+  <div class="logo">
+    <img src="Viator_logo.png" alt="Viator logo">
+  </div>
+</header>
+
+  <main class="center-area">
+    <section class="card">
+      <div class="top-icon" aria-hidden>
+        <svg width="72" height="72" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="24" height="24" rx="6" fill="#E6F3EE" />
           <path d="M8.5 9.5V6a1.5 1.5 0 0 1 3 0v4" stroke="#0A8F6F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M12.5 10v4.5" stroke="#0A8F6F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M16 12v2.5" stroke="#0A8F6F" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-             </svg>
-        </div>
-        <div>
-            <h1>Sign up and start exploring</h1>
-            <p>Create your account using your email below. Quick and easy — we promise!</p>
-            <form class="login-form" onsubmit="return false;">
-                <input class="input" type="text" placeholder="Full Name" required>
+        </svg>
+      </div>
+      <h1>Log in and get exploring</h1>
+      <p class="subtitle">Log into your account with your email, or create one below. Quick and easy - promise!</p>
+      <form class="login-form" onsubmit="return false;">
+        <input class="input" type="password" placeholder="Full Name" required>
         <input class="input" type="email" placeholder="Email" required>
-        <input class="input" type="password" placeholder="Password" required>
+        <input class="input" type="password" placeholder=" Password" required>
         <input class="input" type="password" placeholder="Confirm Password" required>
-        
-        
-       
-
-
-
-        <button class="btn login">Sign Up</button>
-         <a href="index.html">Vous avez deja un compte?</a>
+        <button class="btn login">Log in</button>
+        <a href="index.html">vous avez déjà un compte?</a>
       </form>
+
       <div class="or-line"><span>or continue with</span></div>
-        </div>
-          <div class="socials">
+      <div class="socials">
         <button class="social">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="12" cy="12" r="10" fill="#FFFFFF" stroke="#DDD"/>
@@ -61,11 +56,12 @@
           </svg>
         </button>
       </div>
-            <p class="terms">By creating an account, you agree to our <a href="#">Terms &amp; Conditions</a>, <a href="#">Privacy Policy</a> and <a href="#">Agreement with Viator</a>.</p>
-
+      <p class="terms">By creating an account, you agree to our <a href="#">Terms &amp; Conditions</a>, <a href="#">Privacy Policy</a> and <a href="#">Agreement with Viator</a>.</p>
     </section>
-    <footer>
-        <div class="footer-socials">
+  </main>
+   <div class="vv" >
+ <footer class="site-footer">
+    <div class="footer-socials">
 <div class="footer-socials">
   <a href="#" aria-label="Facebook">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
@@ -75,7 +71,7 @@
 
   <a href="#" aria-label="Instagram">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-      <path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.9.26 2.4.44.6.23 1.1.54 1.6 1.03.49.49.8 1 .99 1.6.18.5.38 1.2.44 2.4.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.26 1.9-.44 2.4-.23.6-.5 1.1-.99 1.6-.49.49-1 .8-1.6.99-.5.18-1.2.38-2.4.44-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.9-.26-2.4-.44-.6-.23-1.1-.5-1.6-.99-.49-.49-.8-1-.99-1.6-.18-.5-.38-1.2-.44-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.26-1.9.44-2.4.23-.6.5-1.1.99-1.6.49-.49 1-.8 1.6-.99.5-.18 1.2-.38 2.4-.44C8.4 2.2 8.8 2.2 12 2.2zm0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2zm0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm6.8-11.6a1.54 1.54 0 1 1-3.08 0 1.54 1.54 0 0 1 3.08 0z"/>
+        <path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.9.26 2.4.44.6.23 1.1.54 1.6 1.03.49.49.8 1 .99 1.6.18.5.38 1.2.44 2.4.07 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.26 1.9-.44 2.4-.23.6-.5 1.1-.99 1.6-.49.49-1 .8-1.6.99-.5.18-1.2.38-2.4.44-1.3.07-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.9-.26-2.4-.44-.6-.23-1.1-.5-1.6-.99-.49-.49-.8-1-.99-1.6-.18-.5-.38-1.2-.44-2.4C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.26-1.9.44-2.4.23-.6.5-1.1.99-1.6.49-.49 1-.8 1.6-.99.5-.18 1.2-.38 2.4-.44C8.4 2.2 8.8 2.2 12 2.2zm0 3.2a6.6 6.6 0 1 0 0 13.2 6.6 6.6 0 0 0 0-13.2zm0 10.9a4.3 4.3 0 1 1 0-8.6 4.3 4.3 0 0 1 0 8.6zm6.8-11.6a1.54 1.54 0 1 1-3.08 0 1.54 1.54 0 0 1 3.08 0z"/>
     </svg>
   </a>
 
@@ -96,15 +92,16 @@
       <path d="M23.5 6.2s-.2-1.6-.9-2.3c-.9-.9-1.9-.9-2.4-1C16.9 2.6 12 2.6 12 2.6h0s-4.9 0-8.2.3c-.5.1-1.5.1-2.4 1C.7 4.6.5 6.2.5 6.2S.2 8.1.2 10v1.9c0 1.9.3 3.8.3 3.8s.2 1.6.9 2.3c.9.9 2.1.9 2.6 1 1.9.2 8 .3 8 .3s4.9 0 8.2-.3c.5-.1 1.5-.1 2.4-1 .7-.7.9-2.3.9-2.3s.3-1.9.3-3.8V10c0-1.9-.3-3.8-.3-3.8zM9.75 14.8V7.8l6.1 3.5-6.1 3.5z"/>
     </svg>
   </a>
-</div>  
- </div>
-  <div class="footer-rating">
+</div>    </div>
+
+
+    <div class="footer-rating">
       <div class="rating-stars">★ ★ ★ ★ ★</div>
       <span>4.4 rating | 289,487 reviews</span>
       <span class="trustpilot">★ Trustpilot</span>
     </div>
 
-    <!-- Links Grid -->
+
     <div class="footer-links-container">
       <div class="footer-column">
         <p>Help Center</p>
@@ -146,6 +143,49 @@
         <p>News</p>
       </div>
     </div>
-    </footer>
+
+
+    <div class="footer-divider"></div>
+
+    <div class="footer-bottom-section">
+      <div class="footer-apps">
+        
+>
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+     xmlns="http://www.w3.org/2000/svg" aria-label="Google Play">
+  <path d="M3 3.9v16.2c0 .6.7 1 1.2.7l9.4-8.1L4.2 3.2c-.5-.3-1.2.1-1.2.7z" fill="#34A853"/>
+  <path d="M13.6 12.7l2.9-2.5-3.3-1.9-3.1 2.7 3.5 1.7z" fill="#FBBC05"/>
+  <path d="M16.5 10.2l2.8-1.6c.5-.3.5-1 0-1.3l-2.8-1.6-3.3 2.9 3.3 1.6z" fill="#EA4335"/>
+  <path d="M13.2 13.8l3.3 2.9 2.8-1.6c.5-.3.5-1 0-1.3l-2.8-1.6-3.3 1.6z" fill="#4285F4"/>
+</svg>
+          <div>
+            <small>GET IT ON</small>
+            <strong>Google Play</strong>
+          </div>
+        
+        
+
+<svg width="28" height="28" viewBox="0 0 24 24" fill="white"
+     xmlns="http://www.w3.org/2000/svg" aria-label="App Store">
+  <path d="M17.05 13.5c-.91 0-1.64.75-1.64 1.96s.73 1.96 1.64 1.96
+           1.64-.75 1.64-1.96-.74-1.96-1.64-1.96zm-4.99-5.5
+           c-.91 0-1.64.75-1.64 1.96s.73 1.96 1.64 1.96
+           1.64-.75 1.64-1.96-.74-1.96-1.64-1.96zM16 3H8
+           c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8
+           c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"/>
+</svg>
+          <div>
+            <small>Download on the</small>
+            <strong>App Store</strong>
+          </div>
+        
+      </div>
+      <div class="footer-copyright">
+        <p>© 1997-2026 Viator. <a href="#">Terms &amp; Conditions</a> • <a href="#">How...works</a> • <a href="#">Cookie Consent</a></p>
+      </div>
+    </div>
+  </footer> 
+
+</div>
 </body>
 </html>
